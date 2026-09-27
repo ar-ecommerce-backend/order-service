@@ -1,6 +1,6 @@
 # order-service
 
-Order orchestration for the [ar-ecommerce-platform](https://github.com/ar-ecommerce-platform).
+Order orchestration for the [ar-ecommerce-backend](https://github.com/ar-ecommerce-backend).
 This is the service that ties the others together.
 
 - **Port:** 8082
@@ -74,7 +74,7 @@ transactions) rather than one `@Transactional` on `place()` — a single transac
 flow rolled the audit record back when the call threw, and held a DB connection open across the
 external HTTP calls.
 
-End-to-end order placement is covered through the gateway in [e2e-tests](https://github.com/ar-ecommerce-platform/e2e-tests).
+End-to-end order placement is covered through the gateway in [e2e-tests](https://github.com/ar-ecommerce-backend/e2e-tests).
 
 ## Config
 
